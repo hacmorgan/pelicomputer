@@ -1,0 +1,18 @@
+* Components
+** Using desktop components
+| component (preferrably a link)                  | cost    | notes                                                   | required for step |
+|-------------------------------------------------+---------+---------------------------------------------------------+-------------------|
+| [[https://www.pelican.com/au/en/product/cases/storm/im2700][Pelican iM2700 Storm Case]]                       | [[https://www.carryitcases.com.au/buy/im2700-storm-case-no-foam-yellow/iM2700YNF?gclid=CjwKCAjwhOD0BRAQEiwAK7JHmBAJfAm4iYsokLNilrt_HI2ahD0UCP6hU3xOfJYnFTl6Ou9k-Gnu6hoCm8MQAvD_BwE][$351]]    | This is the bigger version to fit a 24" monitor         |                   |
+| [[https://www.scorptec.com.au/product/Monitors/23-24-inch/78050-24UD58-B][LG 24UD58-B 24" 4K IPS monitor]]                  | [[https://www.mwave.com.au/product/lg-24ud58b-24-uhd-4k-ips-freesync-led-gaming-monitor-ac16422][$459.00]] | Not currently in stock                                  |                   |
+| 240V AC mains to 12V DC (high current required) |         | There should be enough room foor a big ugly (cheap) one |                 1 |
+| Pico PSU                                        |         |                                                         |                 1 |
+| 240V power monitor                              |         |                                                         |                 1 |
+|                                                 |         |                                                         |                   |
+
+
+* Process
+** Using desktop components
+1. First cut can be done without any battery integration. Just mains power -> 24V for pico psu -> MOBO, CPU and SSD
+   - This will allow us to determine the power consumption of the system, at idle and under load, which will firstly dictate whether this is even possible by battery, and then what kind of batteies will suffice
+2. Once this is done, the next step is to work out how everything will fit, and order the remaining components
+   1. cad model of known components and mounts
