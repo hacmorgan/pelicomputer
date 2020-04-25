@@ -12,6 +12,7 @@
 | component (preferrably a link)           |   cost | Quantity | Purchased? | notes                                                           | required for step |
 |------------------------------------------+--------+----------+------------+-----------------------------------------------------------------+-------------------|
 | [[https://jpcases.com.au/pelican-im2300-storm-case/?gclid=CjwKCAjw7e_0BRB7EiwAlH-goH-QAZli6NqVk3N4drdoIaO0WhJEX4Kc8YmS5NQI8qPtxvTXhhkiyBoCpJAQAvD_BwE][Pelican iM2300 Storm Case]]                | 247.96 |        1 |            |                                                                 |                   |
+| 15.6" 4k IPS Display                     |    350 |        1 |            | approximate, the cheap one is gone now                          |                   |
 | [[https://www.scorptec.com.au/product/Motherboards/Built-In-CPU/77690-RPI4-MODBP-4GB?gclid=CjwKCAjwvtX0BRAFEiwAGWJyZMo8R9Du9rwdnGXVkAXpN-cjqDUZEQtzuYfpIP8oC8gUMnN0-zK6ohoCYvwQAvD_BwE][Raspberry Pi 4B 4GB RAM]]                  |    102 |        1 | Yes        | Will require cooling                                            |                 1 |
 | [[$1][Real time clock]]                          |     11 |        1 |            | Can be added after but earlier is better (think of the fan!)    |                   |
 | [[https://core-electronics.com.au/ice-tower-cpu-cooling-fan-for-raspberry-pi-4.html?utm_source=google_shopping&gclid=CjwKCAjw7e_0BRB7EiwAlH-goC9XYohKKTMK8itwqYry-SqOWh4JVB-s811Kgb5XJUTbRCHXAfVABhoCLScQAvD_BwE][Raspberry Pi ICE tower cooling fan]]       |  43.95 |        1 |            | Will do the best job cooling, may be too big                    |                   |
@@ -23,7 +24,7 @@
 | [[https://www.ebay.com.au/itm/DC-300W-20A-CC-CV-Constant-Current-Adjustable-Converter-Step-Down-Voltage-Buck/283812341477?hash=item421488a6e5:g:LakAAOSwQaheafc6][300W 20A CC CV Buck converter]]            |  16.89 |        1 | Yes        | Need to check exactly how this works and whether is appropriate |                 1 |
 | 24V 5A power supply                      |  29.99 |        1 | Yes        |                                                                 |                 1 |
 |------------------------------------------+--------+----------+------------+-----------------------------------------------------------------+-------------------|
-| TOTAL                                    | 645.93 |          |            |                                                                 |                   |
+| TOTAL                                    | 995.93 |          |            |                                                                 |                   |
 #+TBLFM: $2=vsum(@2..@-1)
 
 
