@@ -1,0 +1,99 @@
+* Components
+** Using desktop components
+| component (preferrably a link)                  | cost    | notes                                                   | required for step |
+|-------------------------------------------------+---------+---------------------------------------------------------+-------------------|
+| [[https://www.pelican.com/au/en/product/cases/storm/im2700][Pelican iM2700 Storm Case]]                       | [[https://www.carryitcases.com.au/buy/im2700-storm-case-no-foam-yellow/iM2700YNF?gclid=CjwKCAjwhOD0BRAQEiwAK7JHmBAJfAm4iYsokLNilrt_HI2ahD0UCP6hU3xOfJYnFTl6Ou9k-Gnu6hoCm8MQAvD_BwE][$351]]    | This is the bigger version to fit a 24" monitor         |                   |
+| [[https://www.ebay.com.au/itm/Portable-Monitor-15-6-LED-Monitor-4K-Ultra-Clear-IPS-Screen-for-PC-Laptop-F3Q8/312813924658?hash=item48d529b132:m:m7P6C5lmwBw6x8l405NjrJA#shpCntId][15.6" 4k portable monitor]]                       | $343.90 | 1.5A @ 5V, 5 in stock, could fit iM2300 case            |                   |
+| 240V AC mains to 12V DC (high current required) |         | There should be enough room foor a big ugly (cheap) one |                 1 |
+| [[https://www.ebay.com.au/itm/Dc-Atx-Peak-Psu-12V-300W-Pico-Atx-Switch-Mining-Psu-24Pin-Mini-Itx-Dc-To-At-X7S3/283842632790?hash=item421656dc56:g:vVcAAOSwym1ej9pQ][Pico PSU]]                                        | $45.09  | Cables included, seems to have all the necessary ones   |                 1 |
+|                                                 |         |                                                         |                   |
+
+** Using raspberry pi
+| component (preferrably a link)           |   cost | Quantity | Purchased? | notes                                                           | required for step |
+|------------------------------------------+--------+----------+------------+-----------------------------------------------------------------+-------------------|
+| [[https://jpcases.com.au/pelican-im2300-storm-case/?gclid=CjwKCAjw7e_0BRB7EiwAlH-goH-QAZli6NqVk3N4drdoIaO0WhJEX4Kc8YmS5NQI8qPtxvTXhhkiyBoCpJAQAvD_BwE][Pelican iM2300 Storm Case]]                | 247.96 |        1 |            |                                                                 |                   |
+| [[https://www.aliexpress.com/item/33058247063.html?spm=2114.search0302.3.250.31c9307eNqeBSa&ws_ab_test=searchweb0_0,searchweb201602_0,searchweb201603_0,ppcSwitch_0&algo_pvid=b5869b70-f431-40e1-ad70-70c915d28d73&algo_expid=b5869b70-f431-40e1-ad70-70c915d28d73-34][17.3" 4K portable monitor]]                | 458.22 |        1 |            | Many of these on AliExpress                                     |                   |
+| 15.6" 4k IPS Display                     |    350 |        1 |            | approximate, the cheap one is gone now                          |                   |
+| [[https://www.scorptec.com.au/product/Motherboards/Built-In-CPU/77690-RPI4-MODBP-4GB?gclid=CjwKCAjwvtX0BRAFEiwAGWJyZMo8R9Du9rwdnGXVkAXpN-cjqDUZEQtzuYfpIP8oC8gUMnN0-zK6ohoCYvwQAvD_BwE][Raspberry Pi 4B 4GB RAM]]                  |    102 |        1 | Yes        | Will require cooling                                            |                 1 |
+| [[$1][Real time clock]]                          |     11 |        1 |            | Can be added after but earlier is better (think of the fan!)    |                   |
+| [[https://core-electronics.com.au/ice-tower-cpu-cooling-fan-for-raspberry-pi-4.html?utm_source=google_shopping&gclid=CjwKCAjw7e_0BRB7EiwAlH-goC9XYohKKTMK8itwqYry-SqOWh4JVB-s811Kgb5XJUTbRCHXAfVABhoCLScQAvD_BwE][Raspberry Pi ICE tower cooling fan]]       |  43.95 |        1 |            | Will do the best job cooling, may be too big                    |                   |
+| [[https://core-electronics.com.au/dual-fan-aluminium-heatsink-case-for-raspberry-pi-4-black.html?utm_source=google_shopping&gclid=CjwKCAjw7e_0BRB7EiwAlH-goBO41qrh-LV5nwYSrAvSa8yWcuXoCERPmfQlgAjmjwz9GNyKOzRmRxoCQYgQAvD_BwE][Raspberry Pi Dual Fan Aluminium Heatsink]] |  28.55 |        1 |            | Slightly less powerful but still good                           |                   |
+|                                          |        |          |            | heatsink, much smaller                                          |                   |
+| [[https://core-electronics.com.au/polymer-lithium-ion-battery-18650-cell-2600mah-solder-tab.html][18650 LiPo Battery]]                       | 145.20 |       12 | Yes        | Comes with solder tab                                           |                 1 |
+| [[https://www.ebay.com.au/itm/2pcs-18650-Battery-Spacer-Holder-Shell-Bracket-DIY-Lithium-Tesla-PowerWall/302730681322?_trkparms=ispr%3D1&hash=item467c279bea:g:YqAAAOSwlSBa8Ya2&enc=AQAEAAACYIQvEcHUrT7nmUC3yY5qbPyaBN1nJEDYW8MyypsJPgXKJXIsITcN%2FKrpKO55R9QEP0ZIYG4H3ni3AnEOM6tWy38RgZsTe3aLZlf6A92r8NwlLf9rnN9V%2FCSuxmKCJvqUYuDANmiPlTImrqwsmMVi1IyomWy5RRKaiaXVj7K41Q1A%2F4kwfVMCyc7CBAjXYL3LGpfMLDdVOgBZdVHDdWUaUdnV8z8V6Vm2Bd0UlUBWSqTdY9vhtznKOmRrbxiIJqBRnNn93vJA5iXsgDn1H%2B%2F2j7R6ZPXajSptqt9RFN8y553RpWbUNn4%2BhuQ3SYFqjTe8AYw7uXOrjjYAjmDU0kp9bG%2B%2FPbtTVW3%2BkaIMymEqpe0oaTFsjCv19595WW0H%2BgpHEwGFKHyAiIOaCiqIAbfhjEZT4BcUcaLu9p2sMYgy2gtPkd83BqEY2Yv9h3XlP8BnhJUVWE5QWFO2pKYvKeIYgCc6QrQ5zkzJ3p8F19ePKJq3sbbfcfUKAnm923JUQILqBxlKuuD1IsAtlFrAeB5p3KO7yEZiu%2BZ4RY2EJy6t4rQTWsZCNlHYhrX4RTMTQU6WjNHnHFPioVPjgz8fI%2Bbt%2BIWrr%2FPfoevGY8EQVuxXr8e5YOH09wpsiB3RZpw8iXtuxPbWZAjcoDsmwctDmyXSejnKsdiGkpLsjcZrLf2GTFM1Q8RMXbzLGpjLuKuK042FyPvJEi%2BV38FRmhZrPICQZVNkdQvI2Mj3GPwbGH5rgOYM0B1nApF9lMxLlUxQKbGhGdib%2FX7HpeB7UIsQyCGMyEFQvs%2FkVkObkP04kKKmiN1Y&checksum=3027306813227f1d2fe88b504cf5be3b119cb8711ad3][Battery spacer]]                           |   8.74 |        1 | Yes        | Can be found on ebay from Australia for $8 ish for 40           |                 1 |
+| [[https://www.ebay.com.au/itm/132749716399][4S 30A 18650 charger board]]               |  11.65 |        1 | Yes        | Awaiting response from seller as to whether this is appropriate |                 1 |
+| [[https://www.ebay.com.au/itm/DC-300W-20A-CC-CV-Constant-Current-Adjustable-Converter-Step-Down-Voltage-Buck/283812341477?hash=item421488a6e5:g:LakAAOSwQaheafc6][300W 20A CC CV Buck converter]]            |  16.89 |        1 | Yes        | Need to check exactly how this works and whether is appropriate |                 1 |
+| 24V 5A power supply                      |  29.99 |        1 | Yes        |                                                                 |                 1 |
+|------------------------------------------+--------+----------+------------+-----------------------------------------------------------------+-------------------|
+| TOTAL                                    | 995.93 |          |            |                                                                 |                   |
+#+TBLFM: $2=vsum(@2..@-1)
+
+
+* Process
+** Using desktop components
+1. First cut can be done without any battery integration. Just mains power -> 24V for pico psu -> MOBO, CPU and SSD
+   - This will allow us to determine the power consumption of the system, at idle and under load, which will firstly dictate whether this is even possible by battery, and then what kind of batteies will suffice
+2. Once this is done, the next step is to work out how everything will fit, and order the remaining components
+   1. cad model of known components and mounts
+
+
+** Raspberry Pi
+*** Step 1: Power system and RPi
+The first thing to do is get the power system working. Once the power system demonstrably works in charging and discharging, the rest of the unit can be purchased
+
+* Power system
+** Commercial
+Detect required power first, then contact battery world
+
+** Homemade system
+- 18650 LiPo batteries are the best
+
+- Comes with solder tabs pre-attached for [[https://core-electronics.com.au/polymer-lithium-ion-battery-18650-cell-2600mah-solder-tab.html][$12.10 each]] from Core electronics -> 300 cycles to 80% discharge.
+  - There *are* more expensive options available, but considering this will be the first battery I've built, cheapies will be good.
+  | detail                    | specification                                 | Notes                          |
+  |---------------------------+-----------------------------------------------+--------------------------------|
+  | Nominal voltage           | 3.7V                                          |                                |
+  | Delivery voltage          | 3.8-3.9V                                      | Within 10 days from factory    |
+  | Charge Voltage            | *4.2V* +/- 0.03V                              | By /standard charging method/  |
+  | Standard charging method  | 0.5C constant current, 4.2V constant voltage  |                                |
+  |                           | charge to 4.2V, continue charging til current |                                |
+  |                           | declines to <= 0.01C                          |                                |
+  | Charge current            | 0.5C 1300mA / 1.0C 2600mA                     | standard charge / rapid charge |
+  | Standard discharge method | 0.2C constant current discharge to *3.0V*     |                                |
+  | Capacity                  | 2600mAh                                       |                                |
+
+- We must make the number of batteries in series enough that they won'd drop below the UBEC's minimum voltage (8V) and can't go above its max voltage (42V)
+  - Min accetable cells: 2.7
+  - Max acceptable cells: 10.0
+  - For a safety barrier we should chose *no more than 9*
+  - Order some spares
+  - Make sure there are enough spacers
+
+- Probably need to buy a benchtop power supply, could maybe use Abyss's one. The strength of this will affect how many cells can be used.
+
+*** Physical size
+- the 1x2 one shown above has approximate size 40 x 20 x 8mm,
+- one cell 20 x 20 x 65mm.
+- the full bock of cells would be 140 x 60 * 65
+  - This fits well within the bounds of the case
+
+*** Capacity
+- = 21 cells
+  - = 54.6Ah battery
+
+- RPi power consumption
+  - 3.4w at idle
+  - 7.6w under load
+  - Let's assume that average is halfway between these two: *5.5w*
+	- We will designate these three values {3.4 *5.5* 7.6}w
+  - At 5V power supply, that's {0.68 *1.1* 1.5}A
+  - So for a 54.6Ah battery that's {80.3 *49* 36.4}h run time
+
+*** Charging
+With a number of cells in parallel, you must multiply current by the number in parallel. Suppose we have a power supply that can deliver 30V at 3.0A:
+- no more than 3 in parallel to charge at < 3A
+- No more than 7 in series to charge at 4.2V
+
+Using a buck converter to convert a higher voltage to our desired voltage with a constant current limit, we should be able to charge the batteries easily. The problem would be if the Pi is simultaneously drawing load, what will happen to the batteries.
+- Ideally we would draw more power from the supply to both charge the batteries and power the pi, but this might not happen. 
+*** Diagram
