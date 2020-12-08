@@ -48,22 +48,8 @@
 | *RASPBERRY PI*                           |         |          |            |                                           |                   |
 | [[https://core-electronics.com.au/dual-fan-aluminium-heatsink-case-for-raspberry-pi-4-black.html?utm_source=google_shopping&gclid=CjwKCAjw7e_0BRB7EiwAlH-goBO41qrh-LV5nwYSrAvSa8yWcuXoCERPmfQlgAjmjwz9GNyKOzRmRxoCQYgQAvD_BwE][Raspberry Pi Dual Fan Aluminium Heatsink]] | 28.55   |        1 |            | Slightly less powerful but still good     |                   |
 
-* Process
-** Using desktop components
-1. First cut can be done without any battery integration. Just mains power -> 24V for pico psu -> MOBO, CPU and SSD
-   - This will allow us to determine the power consumption of the system, at idle and under load, which will firstly dictate whether this is even possible by battery, and then what kind of batteies will suffice
-2. Once this is done, the next step is to work out how everything will fit, and order the remaining components
-   1. cad model of known components and mounts
-
-
-** Raspberry Pi
-*** Step 1: Power system and RPi
-The first thing to do is get the power system working. This would be
-
+** TODO Using up2
 * Power system
-** Commercial
-Detect required power first, then contact battery world
-
 ** Homemade system
 - 18650 LiPo batteries are the best
 
@@ -116,6 +102,62 @@ With a number of cells in parallel, you must multiply current by the number in p
 Using a buck converter to convert a higher voltage to our desired voltage with a constant current limit, we should be able to charge the batteries easily. The problem would be if the Pi is simultaneously drawing load, what will happen to the batteries.
 - Ideally we would draw more power from the supply to both charge the batteries and power the pi, but this might not happen. 
 *** Diagram
+
+* GPIO
+** up2
+The up2 is not being used for GPIO because it's annoyingly difficult
+
+** arduino
+A number of pins have been displaced from their original, nice locations because PWM is only available on digital pins 3, 5, 6, 9, 10 and 11
+*Note:* the arduino is programmed as a *pro or pro mini*, with the 5V CPU but lower number (128? something like that) 
+| *Physical device* | *Pin*   | Notes  |
+|-------------------+---------+--------|
+| POT +5V           | 5V      |        |
+| POT Vout          | A7      |        |
+| POT GND           | GND     |        |
+| Battery Vout      | A4      |        |
+| LED Strip +5V     | D13     |        |
+| LED Strip R       | D9      |        |
+| LED Strip G       | D10     |        |
+| LED Strip B       | D11     |        |
+| Mouse +5V         | up2 +5V | Maroon |
+| Mouse Left        | D2      | White  |
+| Mouse Middle      | A1      | Grey   |
+| Mouse Right       | A0      | Green  |
+| RGB switch +5V    | up2 +5V | Maroon |
+| R switch          | A2      | Green  |
+| G switch          | D7      | Yellow |
+| B switch          | D8      | Grey   |
+| RGB LED GND       | up2 GND | Grey   |
+| R switch LED      | D3      | Yellow |
+| G switch LED      | D5      | Green  |
+| B switch LED      | D6      | White  |
+
+** serial protocol
+data is sent from the arduino to the up2 continuously, reporting:
+- whether each mouse button is depressed
+- pot value
+- battery level
+
+this data will be sent as comma separated text with the order:
+1. left mouse status (1/0)
+2. middle mouse status (1/0)
+3. right mouse status (1/0)
+4. pot value (0-1023)
+5. battery level (0-1023)
+* Software
+** PeliMonitor
+*** TODO Extract battery percentage, and write to filesystem (somewhere)
+*** DONE Mouse scrolling
+*** TODO xmonad config
+- Use DT's config as a reference
+- Watch videos too
+- Finish reading the guide
+**** TODO xmobar
+**** TODO picom
+**** TODO keyboard shortcuts
+*** TODO Make installable
+*** TODO Start with systemd
 * Deprecated
 ** Using desktop components
 | component (preferrably a link)                  | cost    | notes                                                   | required for step |
